@@ -110,6 +110,10 @@
             $.ajax({
                 url : "http://localhost/pemesanan/public/changeStatusPayment",
                 method : "POST",
+                crossDomain: true,
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
                 data : {
                     id_pembayaran: id_pembayaran,
                     status: status

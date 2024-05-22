@@ -83,6 +83,10 @@
                 $.ajax({
                     url : "http://localhost/pemesanan/public/getPesananAPIScanner",
                     method : "POST",
+                    crossDomain: true,
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
                     data : {
                         id_pesanan: res.data.id_pesanan, 
                     },

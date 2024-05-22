@@ -68,7 +68,7 @@
         
 
         $.ajax({
-            url : "https://localhost/decrypt",
+            url : "http://localhost/pemesanan/public/decrypt",
             method : "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -80,7 +80,7 @@
                 // $(".listPesanan"+id_pesanan).html(data)
                 let res = JSON.parse(data)
                 $.ajax({
-                    url : "https://localhost/getPesananAPIScanner",
+                    url : "http://localhost/pemesanan/public/getPesananAPIScanner",
                     method : "POST",
                     data : {
                         id_pesanan: res.data.id_pesanan, 

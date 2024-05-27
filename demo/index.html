@@ -121,8 +121,7 @@
                 success: function(data){
                     console.log(data)
                     if(status == "Cash"){
-                        localStorage.removeItem("id_user")
-                        localStorage.removeItem("id_pesanan")
+                        localStorage.clear();
                     }
                     window.location.reload()
                 }

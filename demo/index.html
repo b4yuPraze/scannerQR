@@ -119,7 +119,9 @@
                     status: status
                 },
                 success: function(data){
-                    localStorage.clear()
+                    if(status == "Cash"){
+                        localStorage.clear()
+                    }
                     window.location.reload()
                 }
             });

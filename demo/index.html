@@ -120,7 +120,8 @@
                 },
                 success: function(data){
                     if(status == "Cash"){
-                        localStorage.clear()
+                        localStorage.removeItem("id_user")
+                        localStorage.removeItem("id_pesanan")
                     }
                     window.location.reload()
                 }

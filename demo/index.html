@@ -122,6 +122,7 @@
                     console.log(data)
                     if(status == "Cash"){
                         window.parent.postMessage('clearLocalStorage', 'http://localhost');
+                        window.parent.postMessage({ key: 'statusPembayaran', value: 'cashing' }, 'http://localhost');
                     }
                     window.location.reload()
                 }

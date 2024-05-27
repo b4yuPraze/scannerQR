@@ -121,7 +121,8 @@
                 success: function(data){
                     console.log(data)
                     if(status == "Cash"){
-                        localStorage.clear();
+                        var parentLocal = window.parent.localStorage; 
+                        parentLocal.clear()
                     }
                     window.location.reload()
                 }
